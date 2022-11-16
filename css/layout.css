@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url("content.css");
+@import url("loading.css");
+
+/* 공통요소 */
+
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+/*  기본 레이아웃 */
+section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* visual */
+/* profile */
+/* design */
+.design {
+}
+.design-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.design h3 {
+  position: absolute;
+  font-size: 90px;
+  text-transform: uppercase;
+  left: 310px;
+  top: 92px;
+}
+
+.design h4 {
+  position: absolute;
+  font-size: 90px;
+  text-transform: uppercase;
+  left: 310px;
+  top: 174px;
+}
+.design-scene {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 디자인 내용물 중앙 정렬 */
+.design-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  font-size: 200px;
+  overflow: hidden;
+}
+/* 디자인 결과물 중앙 정렬 */
+.design-content .design-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* publishing */
+/* life */
+/* contact */

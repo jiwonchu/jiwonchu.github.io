@@ -1,0 +1,1246 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/the-feeling");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://webfontworld.github.io/jeongseon/JSDongkang.css");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+  font-family: "The Feeling";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/the_feeling416/The\ Feeling.ttf");
+}
+
+@font-face {
+  font-family: "KCC-eunyoung";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/KCC은영체/KCC은영체\(Windows용\).ttf");
+}
+
+@font-face {
+  font-family: "South Amsterdam";
+  src: url("../fonts/South\ Amsterdam\ Demo.ttf");
+}
+
+@font-face {
+  font-family: "PokerInOctober";
+  src: url("../fonts/AnyConv.com__PokerInOctober-Demo.ttf");
+}
+
+@font-face {
+  font-family: "APOLLO";
+  src: url("../fonts/AnyConv.com__APOLLO.ttf");
+}
+
+@font-face {
+  font-family: "Bohemian Soul";
+  src: url("../fonts/AnyConv.com__Bohemian\ Soul.ttf");
+}
+
+@font-face {
+  font-family: "GongGothicBold";
+  src: url("../fonts/esamanru\ Bold.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "GongGothicLight";
+  src: url("../fonts/esamanru\ Light.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("../fonts/esamanru\ Medium.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardLight";
+  src: url("../fonts/AnyConv.com__Pretendard-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardBlack";
+  src: url("../fonts/AnyConv.com__Pretendard-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardMedium";
+  src: url("../fonts/AnyConv.com__Pretendard-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardBold";
+  src: url("../fonts/AnyConv.com__Pretendard-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moglan";
+  src: url("../fonts/AnyConv.com__Moglan_DEMO.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Poppins", "JSDongkang", "Noto Sans KR", Helvetica, "맑은 고딕",
+    "malgun gothic", "Apple SD Gothic Neo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.64px;
+  color: #444;
+}
+
+.logo {
+  position: fixed;
+  width: 140px;
+  height: 300px;
+  display: block;
+  background: url("../images/logo.png") no-repeat right top;
+  background-size: contain;
+  right: -15px;
+  top: 0px;
+  z-index: 999;
+  /* background: url('../images/임시로고.png')no-repeat center; */
+  /* background-size: cover; */
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  z-index: 9999;
+  height: 100%;
+}
+
+.header .inner {
+  position: relative;
+  height: 100%;
+}
+
+.gnb {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  transition: all 0.5s;
+  color: #f39ce2;
+}
+
+.gnb.active {
+  left: 22px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  padding-left: 22px;
+  padding-top: 100px;
+  cursor: pointer;
+}
+
+.bar > li > i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.gnb > li {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.gnb > li > i {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  margin-right: 15px;
+}
+
+.gnb > li > a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #f39ce2;
+}
+
+.gnb > li:hover > i,
+.gnb > li:hover > a {
+  color: #e1a3f0;
+}
+
+/* visual */
+
+.visual {
+  /* position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  background-color: #fff;
+  */
+  background: #fff;
+}
+
+.visual .inner {
+  width: 100%;
+  height: 100%;
+}
+
+/* 라운딩 */
+
+.emblem-pos {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+.word {
+  position: relative;
+  z-index: 1;
+  color: #a4a7da;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.word > span {
+  position: absolute;
+  display: inline-block;
+  left: 204px;
+  top: 238px;
+  bottom: 0;
+  font-family: "APOLLO";
+  /* letter-spacing: 25px; */
+  text-transform: uppercase;
+  font-size: 7ch;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes spinZ {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.visual-md {
+  position: absolute;
+  right: -105px;
+  width: 555px;
+  bottom: 0px;
+  display: block;
+  z-index: 2;
+}
+
+.visual-1 {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.visual-2 {
+  position: absolute;
+  display: block;
+  left: -37%;
+  bottom: 42%;
+}
+
+.visual-3 {
+  position: absolute;
+  display: block;
+  left: 7%;
+  top: 17%;
+}
+
+.visual-4 {
+  position: absolute;
+  display: block;
+  right: -37%;
+  bottom: -3%;
+  z-index: 1;
+}
+
+.visual-5 {
+  position: absolute;
+  display: block;
+  right: 0%;
+  bottom: 25%;
+}
+
+.visual-6 {
+  position: absolute;
+  display: block;
+  bottom: 30%;
+}
+
+.visual-7 {
+  position: absolute;
+  display: block;
+  left: 22%;
+  bottom: 27%;
+}
+
+.visual-8 {
+  position: absolute;
+  display: block;
+  right: 67%;
+  bottom: 29%;
+}
+
+.visual-9 {
+  position: absolute;
+  display: block;
+  right: 57%;
+  top: 34%;
+}
+
+.visual-10 {
+  position: absolute;
+  display: block;
+  right: 50%;
+  top: -2%;
+}
+
+.visual-11 {
+  position: absolute;
+  display: block;
+  right: -10%;
+  top: 32px;
+}
+
+.bg-effect-1 {
+  position: absolute;
+  left: -18%;
+  top: -2%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-2 {
+  position: absolute;
+  left: -31%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-3 {
+  position: absolute;
+  left: 18%;
+  top: 26%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-4 {
+  position: absolute;
+  right: -68%;
+  bottom: -25%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-5 {
+  position: absolute;
+  right: -19%;
+  bottom: 12%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-6 {
+  position: absolute;
+  left: 8%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  animation: roll 13s ease infinite;
+}
+
+.bg-effect-7 {
+  position: absolute;
+  left: 22%;
+  bottom: 27%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-8 {
+  position: absolute;
+  right: 65%;
+  bottom: 26%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-9 {
+  position: absolute;
+  right: 57%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-10 {
+  position: absolute;
+  right: 42%;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+.bg-effect-11 {
+  position: absolute;
+  right: -5%;
+  top: 6%;
+  transform: translate(-50%, -50%);
+  animation: roll 15s ease infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-70%, -30%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.visual-bl {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+  display: block;
+  font-family: "South Amsterdam";
+  font-size: 70px;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
+  text-shadow: 0 1px 0 #ccc;
+  z-index: 1;
+}
+
+.vtxt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25vh;
+  margin: 0 auto;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #003a6f;
+  animation: spinZ 20s linear infinite;
+  text-align: center;
+}
+
+.v-txt-2 {
+  bottom: 0;
+}
+
+.blink {
+  font-size: 70px;
+  animation-name: carrot;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carrot {
+  0% {
+    border-right: 2px solid #fff;
+  }
+  50% {
+    border-right: 2px solid #000;
+  }
+  100% {
+    border-right: 2px solid #fff;
+  }
+}
+
+/* profile */
+
+.profile {
+  left: -50px;
+}
+
+.profile .inner {
+  height: 100%;
+}
+
+.profile-back {
+  position: absolute;
+  width: 113%;
+  height: 80%;
+  top: 100px;
+  background: linear-gradient(
+    0deg,
+    rgba(253, 160, 255, 0.6),
+    rgba(253, 226, 255, 0.1)
+  );
+  border-radius: 16px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 6px 12px;
+  border: 1px solid white;
+  backdrop-filter: blur(0px);
+}
+
+.profile-wrap {
+  position: absolute;
+  width: 600px;
+  height: 370px;
+  left: 660px;
+  top: 350px;
+  text-align: left;
+  color: #e1a3f0;
+}
+
+.name-on {
+  position: absolute;
+  display: block;
+  right: 600px;
+  top: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "PretendardBold";
+}
+
+.license-on {
+  position: absolute;
+  display: block;
+  left: 250px;
+  top: 31px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "PretendardBold";
+}
+
+.edu-on {
+  position: absolute;
+  display: block;
+  left: -68px;
+  top: 270px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "PretendardBold";
+}
+
+.pro-name {
+  position: relative;
+  display: block;
+  margin-left: -67px;
+  margin-top: 70px;
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: "PretendardBold";
+  font-weight: 400;
+}
+
+.pro-license {
+  position: relative;
+  display: block;
+  margin-left: 250px;
+  top: -147px;
+  font-size: 20px;
+  line-height: 35px;
+  white-space: nowrap;
+  font-family: "PretendardBold";
+  font-weight: 400;
+}
+
+.pro-edu {
+  position: relative;
+  display: block;
+  margin-left: -69px;
+  margin-top: -15px;
+  line-height: 35px;
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: "PretendardBold";
+  font-weight: 400;
+}
+
+.profile h2 {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-family: "Moglan";
+  width: 200px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #e1a3f0;
+  margin: 0 auto;
+  padding-top: 41px;
+}
+
+.profile-tl {
+  position: absolute;
+  top: 216px;
+  left: 590px;
+  white-space: nowrap;
+  display: inline-block;
+  font-family: "KCC-eunyoung", "The feeling";
+  font-family: "Pretendard-Regular";
+  font-size: 35px;
+  font-weight: 500;
+  color: #e1a3f0;
+}
+
+.profile-br {
+  position: absolute;
+  top: 272px;
+  left: 591px;
+  white-space: nowrap;
+  display: inline-block;
+  font-family: "KCC-eunyoung", "The feeling";
+  font-family: "Pretendard-Regular";
+  font-size: 35px;
+  font-weight: 600;
+  color: #e1a3f0;
+}
+
+.pro_btn {
+  width: 15rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 1.063rem;
+  margin-top: 36.85rem;
+  margin-left: 47rem;
+  /* background-color: #c1f9f0; */
+  border: 3px solid transparent;
+  color: #fff;
+  height: 3.438rem;
+  align-items: center;
+  justify-items: center;
+  padding: 0.625rem;
+  transition: 0.25s ease-out;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer;
+}
+
+.pro_btn:hover {
+  background-color: #000;
+  border: 3px solid transparent;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.pro-ji {
+  position: absolute;
+  width: 56%;
+  left: -533px;
+  bottom: 112px;
+  display: block;
+}
+
+.pro-skill-list {
+  position: absolute;
+  display: block;
+  left: -575px;
+  bottom: -57px;
+}
+
+.profile-skill {
+  display: inline-block;
+  left: 259px;
+  top: 610px;
+  width: 83px;
+}
+
+/* design */
+
+/* publishing */
+
+.publishing .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 700px;
+}
+
+.publishing h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Moglan";
+  width: 200px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #e1a3f0;
+  margin: 0 auto;
+}
+
+.publishing h5 {
+  color: #000;
+}
+
+.publishing-slide {
+  position: relative;
+  display: block;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.publishing-slide .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sw-publishing .swiper-slide > div {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 65%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+  background-color: #48d9c9;
+  padding: 3%;
+  border-radius: 20px;
+  border: 2px solid rgba(253, 160, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.swiper-slide-active:hover .portfolio-list {
+  z-index: 2;
+  opacity: 1;
+}
+
+.portfolio-list h5 {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  /* font-family: "GongGothicMedium"; */
+  font-family: "PretendardBold";
+  font-weight: 500;
+  width: 100%;
+}
+
+/*
+.portfolio-list > li a {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 45px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin-right: 20px;
+  text-align: center;
+  color: #fff;
+} */
+
+.port-do {
+  position: relative;
+  display: block;
+  background: url("../images/dosi.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-back {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+
+.swiper-slide-active:hover .port-back {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.port-ex {
+  position: absolute;
+  /* display: block; */
+  top: 138px;
+  left: 213px;
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  display: block;
+  width: 62%;
+  height: 195px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.port-ex-r {
+  position: absolute;
+  top: 137px;
+  left: 444px;
+  display: block;
+  font-family: "Pretendard-Regular";
+  font-weight: 400;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.port-ex > ul {
+  gap: 4px;
+}
+
+.port-ex > ul > li {
+}
+
+.ex-lf {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.ex-rg {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.port-bt {
+  display: flex;
+  padding-left: 149px;
+  padding-bottom: 37px;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.port-bt li {
+  width: 30%;
+  text-align: center;
+}
+
+.port-bt > li > a {
+  display: block;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 30px;
+}
+
+.po-btn {
+  position: relative;
+  display: block;
+
+  border-radius: 8px;
+  display: block;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  background-color: #fff;
+  /* border: 2px solid; */
+  /* border-top-width: 1px;
+
+  border-left-width: 1px; */
+  transition: 0.3s;
+  z-index: 9;
+}
+
+.po-btn > a {
+  display: block;
+  padding: 8px 16px;
+  color: #48d9c9;
+}
+
+.po-btn:hover > a {
+  color: #fff;
+  background: #e1a3f0;
+  border-radius: 8px;
+  border: none;
+  /* padding: 8px 9px; */
+}
+
+/* .po-btn:hover > a {
+  padding: 8px 25px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-top-width: 1px;
+  transition: 0.3s;
+  z-index: 9;
+  border-left-width: 1px;
+  background-color: #4d0fff;
+  color: #fff;
+} */
+
+.port-je {
+  position: relative;
+  display: block;
+  background: url("../images/jung.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-kw {
+  position: relative;
+  display: block;
+  background: url("../images/k-watermac.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-gj {
+  position: relative;
+  display: block;
+  background: url("../images/gjmac.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-no {
+  position: relative;
+  display: block;
+  background: url("../images/noelmac.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-ms {
+  position: relative;
+  display: block;
+  background: url("../images/masimac.png") no-repeat center;
+  background-size: cover;
+}
+
+.port-sx {
+  position: relative;
+  display: block;
+  background: url("../images/stxmac.png") no-repeat center;
+  background-size: cover;
+}
+
+/* life */
+
+.life {
+}
+
+.life .inner {
+  height: 100%;
+}
+
+.life h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-family: "Moglan";
+  font-size: 32px;
+  font-weight: 800;
+  color: #e1a3f0;
+  margin: 0 auto;
+}
+
+.life-wrap {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.life-list {
+  position: relative;
+  display: block;
+  width: calc(302px * 3);
+  margin: 0 auto;
+}
+
+.life-list li {
+  position: relative;
+  display: block;
+  width: 302px;
+  float: left;
+}
+
+/* .life-list > p {
+  position: absolute;
+  display: block;
+  left: 320px;
+  top: 50px;
+} */
+
+.life-1 {
+  width: 75%;
+}
+
+.life-2 {
+  position: absolute;
+  width: 75%;
+  top: 0px;
+  left: 50px;
+}
+
+.life-3 {
+  position: absolute;
+  width: 75%;
+  left: 400px;
+}
+
+.life-4 {
+  position: absolute;
+  width: 75%;
+  right: 338px;
+  top: 416px;
+}
+
+.life-5 {
+  position: absolute;
+  width: 75%;
+  top: 417px;
+  right: 30px;
+}
+
+.life-6 {
+  position: absolute;
+  width: 75%;
+  left: 100px;
+  top: 420px;
+}
+
+.life-am {
+  position: absolute;
+  left: 57px;
+  top: 328px;
+}
+
+.life-ex {
+  position: absolute;
+  left: 79px;
+  top: 328px;
+}
+
+.life-hi {
+  position: absolute;
+  right: -181px;
+  top: 328px;
+}
+
+.life-ca {
+  position: absolute;
+  right: 500px;
+  top: 737px;
+}
+
+.life-pi {
+  position: relative;
+  top: 737px;
+  right: 17px;
+}
+
+.life-se {
+  position: absolute;
+  left: 137px;
+  top: 737px;
+  white-space: nowrap;
+}
+
+/* contact */
+
+.contact {
+}
+
+.contact .inner {
+  height: 100%;
+}
+
+.contact > img {
+  width: 100vw;
+  height: 100%;
+  filter: blur(3px);
+}
+
+.contact h2 {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 100px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 25px;
+  font-family: "Bohemian Soul";
+  font-size: 50px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.card {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  left: 520px;
+  bottom: 285px;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  width: 505px;
+  height: 300px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgb(43 53 162 / 0%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#card {
+  animation: motion 5s both linear infinite;
+}
+
+@keyframes motion {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(25px) translateX(0px);
+  }
+  50% {
+    transform: translateY(50px) translateX(0px);
+  }
+  75% {
+    transform: translateY(25px) translateX(0px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.contact-back {
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
+}
+
+.conatact-logo {
+  width: 20%;
+  left: -9px;
+  bottom: 5px;
+  z-index: 9;
+  position: absolute;
+}
+
+.contact-mail {
+  position: absolute;
+  white-space: nowrap;
+  display: block;
+  right: 58px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  top: 190px;
+  color: #fff;
+  /* color: pink; */
+  text-shadow: /* White glow */ 0 0 4px #fff, 0 0 0px #fff, 0 0 21px #fff;
+}
+
+.contact-bir {
+  position: absolute;
+  white-space: nowrap;
+  display: block;
+  right: 236px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  top: 246px;
+  color: #fff;
+  /* color: pink; */
+  text-shadow: /* White glow */ 0 0 1px #fff, 0 0 0px #fff, 0 0 15px #fff;
+}
+
+.contact-name {
+  position: absolute;
+  white-space: nowrap;
+  display: block;
+  right: 115px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  top: 245px;
+  color: #fff;
+  /* color: pink; */
+  text-shadow: /* White glow */ 0 0 1px #fff, 0 0 0px #fff, 0 0 15px #fff;
+}
+
+.contact-qr {
+  position: absolute;
+  width: 20%;
+  left: 45px;
+  top: 20px;
+}
+
+.contact-git {
+  position: absolute;
+  width: 17%;
+  top: 10;
+  right: 210px;
+  top: 23px;
+}
+
+.contact-notion {
+  position: absolute;
+  width: 17%;
+  top: 25px;
+  right: 47px;
+}
