@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png" />
+    <title>황지원 포트폴리오</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <meta name="description" content="디자이너 황지원 포트폴리오입니다." />
+    <meta name="keywords" content="디자이너, 퍼블리셔, 개발자 포트폴리오" />
+    <meta name="author" content="황지원" />
+    <meta property="og:title" content="디자이너 황지원 포트폴리오" />
+    <meta property="og:site_name" content="디자이너 개발자 황지원 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="jiwonchu.github.io" />
+    <meta property="og:image" content="jiwonchu.github.io" />
+    <meta property="og:description" content="디자이너 황지원 포트폴리오입니다." />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- gsap 플러그인 : scrollTop  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js" integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- lightbox2 참조 -->
+    <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css">
+    <script src="js/lightbox2/js/lightbox.js"></script>
+    <script src="js/move.js"></script>
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loader-wrap">
+        <div class="loader">
+            <div class="load load-1"></div>
+            <div class="load load-2"></div>
+            <div class="load load-3"></div>
+        </div>
+        <svg xmlns "http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!-- logo -->
+    <div class="logo"></div>
+    <!-- header -->
+    <header class="header">
+        <div class="inner">
+            <ul class="bar">
+                <li>
+                    <!-- <i class="fas fa-bars"></i> -->
+                </li>
+            </ul>
+            <ul class="gnb">
+                <li><i class="fas fa-home"></i><a href="#home">Home</a></li>
+                <li><i class="fas fa-user-alt"></i><a href="#profile">Profile</a></li>
+                <li><i class="fas fa-desktop"></i><a href="#portfolio">Portfolio</a></li>
+                <li><i class="far fa-window-restore"></i><a href="#publishing">Publishing</a></li>
+                <li><i class="fas fa-walking"></i><a href="#life">Life</a></li>
+                <li><i class="fas fa-phone-volume"></i><a href="#contact">Contact</a></li>
+                <li><i class="fab fa-github home"></i><a href="https://github.com/jiwonchu" target="_blank">GitHub</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <!--// header  -->
+
+    <div class="wrap">
+        <!-- visual -->
+        <section class="visual" id="visual">
+            <div class="inner">
+                <!-- <div class="emblem-pos">
+                    <div class="emblem">portfolio 2022</div>
+                </div> -->
+                <div class="word">2022 portfolio</div>
+                <!-- Photo -->
+                <img src="images/visual-md.png" alt="" class="visual-md">
+                <img src="images/start_1.png" alt="" class="visual-1 bg-effect-1">
+                <img src="images/start_2.png" alt="" class="visual-2 bg-effect-2">
+                <img src="images/start_3.png" alt="" class="visual-3 bg-effect-3">
+                <img src="images/start_4.png" alt="" class="visual-4 bg-effect-4">
+                <img src="images/start_5.png" alt="" class="visual-5 bg-effect-5">
+                <img src="images/start_6.png" alt="" class="visual-6 bg-effect-6">
+
+                <img src="images/start_7.png" alt="" class="visual-7 bg-effect-7">
+
+                <img src="images/start_8.png" alt="" class="visual-8 bg-effect-8">
+                <img src="images/start_9.png" alt="" class="visual-9 bg-effect-9">
+                <img src="images/start_10.png" alt="" class="visual-10 bg-effect-10">
+                <img src="images/start_11.png" alt="" class="visual-11 bg-effect-11">
+                <!-- <img src="images/비주얼2.png" alt="" class="visual"> -->
+            </div>
+        </section>
+        <!-- profile -->
+        <section class="profile" id="profile">
+            <div class="inner">
+                <div class="profile-back"></div>
+                <h2>ABOUT</h2>
+                <span class="profile-tl"> 꾸준히 도전하는 신입 디자이너
+                </span>
+                <span class="profile-br">황지원입니다.</span>
+
+                <!-- <a class="pro_btn btn" href="">DOWNLOAD RESUME</a> -->
+                <div class="profile-wrap">
+                    <div class="name-on">Name</div>
+                    <div class="license-on">License</div>
+                    <div class="edu-on">Education</div>
+                    <div class=pro-name><img src="" alt="">
+                        <p>황지원(HWANG JI WON)</p><br>
+                        <p>1998.11.20</p><br>
+
+                    </div>
+                    <div class=pro-license>
+                        <img src="" alt>
+                        <p>컴퓨터활용능력 2급<br> 전산회계2급
+                            <br> ITQ 한글/엑셀/파워포인트 A</p>
+                    </div>
+                    <div class=pro-edu>
+                        <img src="" alt>
+                        <p>스마트혼합-뷰(Vue) 활용 프론트엔드 개발자 양성과정 A 수료 예정<br> 그린컴퓨터학원 디지털편집디자인 인재 양성과정 A 수료<br> 계명문화대학교 경영과 전공
+
+                        </p>
+                    </div>
+                    <img src="images/profile-back_1.png" alt="" class="pro-ji">
+                    <div class="pro-skill-list">
+                        <img src="images/html.png" alt="" class="profile-skill">
+                        <img src="images/css.png" alt="" class="profile-skill">
+                        <img src="images/javascript.png" alt="" class="profile-skill">
+                        <img src="images/photoshop.png" alt="" class="profile-skill">
+                        <img src="images/illu.png" alt="" class="profile-skill">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- design -->
+        <section class="design" id="design">
+            <div class="design-wrap">
+                <!-- html 코드 정리 -->
+
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-1.png" data-lightbox="design-1" data-title="My Design">
+                            <img src="images/design_0.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-2.png" data-lightbox="design-2" data-title="My Design">
+                            <img src="images/design_1.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-3.png" data-lightbox="design-3" data-title="My Design">
+                            <img src="images/design_2.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-4.png" data-lightbox="design-4" data-title="My Design">
+                            <img src="images/design_3.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-5.png" data-lightbox="design-5" data-title="My Design">
+                            <img src="images/design_4.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-6.png" data-lightbox="design-6" data-title="My Design">
+                            <img src="images/design_5.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-7.png" data-lightbox="design-7" data-title="My Design">
+                            <img src="images/design_6.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-8.png" data-lightbox="design-8" data-title="My Design">
+                            <img src="images/design_7.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="design-scene">
+                    <div class="design-content">
+                        <a href="images/desi-9.png" data-lightbox="design-9" data-title="My Design">
+                            <img src="images/design_8.png" alt="" class="design-img">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- publishing -->
+        <section class="publishing" id="publishing">
+            <div class="inner">
+                <h2>PUBLISHING</h2>
+                <!-- design slide -->
+                <div class="publishing-slide">
+                    <div class="swiper-container sw-publishing">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="port-do">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5> 도시락통<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">도시락통</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/dosirak/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/dosirak"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="https://dosiraktong.com/Main/Index" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="port-kw">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5>K-water<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">K-water</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/k-water/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/k-water"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="port-no">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5>노엘로힐스<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">노엘로힐스</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/noellohills/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/noellohills"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="https://www.noelohills.com/" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="port-gj">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5>거제청년센터<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">거제청년센터</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/geojeyouth/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/geojeyouth"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="https://geojeyouth.com/web/" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="port-ms">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5>마시그래이<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">마시그래이</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/masigray/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/masigray"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="https://www.masigray.com:5021/main/main.asp" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="port-sx">
+                                    <div class="port-back"></div>
+                                    <div class="portfolio-list">
+                                        <h5>STX건설<br>(PC/Mobile)</h5>
+                                        <div class="port-ex">
+                                            <ul>
+                                                <li class="ex-lf">프로젝트명</li>
+                                                <li class="ex-lf">프로젝트 구성</li>
+                                                <li class="ex-lf">프로젝트 참여도</li>
+                                                <li class="ex-lf">사용 프로그램</li>
+                                            </ul>
+                                        </div>
+                                        <div class=port-ex-r>
+                                            <ul>
+                                                <li class="ex-rg">STX건설</li>
+                                                <li class="ex-rg">반응형 웹</li>
+                                                <li class="ex-rg">100%(1인 프로젝트) </li>
+                                                <li class="ex-rg">HTML,CSS,JS,jQuery</li>
+                                            </ul>
+                                        </div>
+                                        <ul class="port-bt">
+                                            <li>
+                                                <span class="po-btn"><a href="https://jiwonchu.github.io/stxconst/"
+                                                        target="_blank">work</a></span>
+                                            </li>
+                                            <li>
+                                                <span class="po-btn"><a href="https://github.com/jiwonchu/stxconst"
+                                                        target="_blank">github</a></span>
+                                            </li>
+                                            <li><span class="po-btn"><a
+                                                        href="http://www.stxconst.co.kr/" target="_blank">origin</a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- life -->
+        <section class="life" id="life">
+            <div class="inner">
+                <h2>Life</h2>
+                <!-- life slide -->
+                <div class="life-wrap">
+                    <ul class="life-list">
+                        <li>
+                            <img src="images/life_1.png" alt="" data-aos="fade-right" data-aos-delay="100" data-aos-speed="300" class="life-1">
+                            <p class="life-am">/Amusement Park</p>
+                        </li>
+
+                        <li>
+                            <img src="images/life_2.png" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-speed="500" class="life-2">
+                            <p class="life-ex">/Exhibition</p>
+                        </li>
+                        <li>
+                            <img src="images/life_3.png" alt="" data-aos="fade-left" data-aos-delay="200" data-aos-speed="400" class="life-3">
+                            <p class="life-hi">/Hiking</p>
+                        </li>
+                        <li>
+                            <img src="images/life_5.png" alt="" data-aos="fade-up-right" data-aos-delay="400" data-aos-speed="600" class="life-4">
+                            <p class="life-ca">/Cafe</p>
+                        </li>
+                        <li>
+                            <img src="images/life_4.png" alt="" data-aos="fade-down-right" data-aos-delay="600" data-aos-speed="700" class="life-5">
+                            <p class="life-pi">/take pictures</p>
+                        </li>
+                        <li>
+                            <img src="images/life_6.png" alt="" data-aos="fade-down-left" data-aos-delay="700" data-aos-speed="800" class="life-6">
+                            <p class="life-se">/sea ​​view</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="inner">
+                <img src="images/footer-back.png" alt="" class="contact-back">
+                <h2>Contact Me</h2>
+                <div class="card" id="card">
+                    <img src="images/contact_logo.png" alt="" class="conatact-logo">
+                    <!-- <div class="logo" div id="f-logo"> -->
+                    <span class="contact-mail">kdnjw@naver.com</span>
+                    <span class="contact-bir"></span>
+                    <span class="contact-name">hwang ji won</span>
+                    <a href="https://open.kakao.com/o/szZIbPHe
+">
+                        <img src="images/kakaotalk_qr.png" alt="" class="contact-qr"></a>
+                    <a href="https://github.com/jiwonchu">
+                        <img src="images/contact_git.png" alt="" class="contact-git"></a>
+                    <a href="https://www.notion.so/fdc9c82c6bc44d728124df9868023c27">
+                        <img src="images/contact_notion.png" alt="" class="contact-notion"></a>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+</body>
+
+</html>
